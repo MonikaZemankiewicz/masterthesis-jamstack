@@ -9,7 +9,7 @@ export default function Home() {
       <main className="page">
         <header className="hero">
           <StaticImage
-            src="../assets/images/2.jpg"
+            src="../assets/images/1.jpg"
             alt="home-page-image"
             className="hero-img"
             placeholder="tracedSVG"
