@@ -1,11 +1,14 @@
 import React from "react";
 import Layout from "../components/Layout";
+import AllImages from "../components/AllImages";
 
 const Gallery = () => {
   return (
-    <>
-      <Layout>hello from gallery</Layout>
-    </>
+    <Layout>
+      <main className="page">
+        <AllImages></AllImages>
+      </main>
+    </Layout>
   );
 };
 
