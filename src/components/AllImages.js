@@ -4,7 +4,7 @@ import ImagesList from "./ImagesList";
 
 const query = graphql`
   query {
-    allContentfulImage(sort: { title: ASC }) {
+    allContentfulImage(sort: { createdAt: DESC }) {
       nodes {
         id
         title
