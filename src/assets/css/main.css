@@ -501,6 +501,9 @@ form > *:last-child {
 .about-img {
   border-radius: var(--borderRadius);
   height: 500px;
+  max-width: 100%;
+  max-height: fit-content;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 992px) {
@@ -511,6 +514,7 @@ form > *:last-child {
   }
   .about-img {
     height: 100%;
+    max-height: fit-content;
   }
 }
 
@@ -524,6 +528,8 @@ form > *:last-child {
 
 .hero-img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
   border-radius: var(--borderRadius);
 }
 .hero {
@@ -630,6 +636,7 @@ form > *:last-child {
   max-width: 100%;
   backface-visibility: hidden;
   object-fit: cover;
+  min-width: 100%;
 }
 
 .recipe figcaption {
@@ -678,7 +685,6 @@ form > *:last-child {
   }
   .recipe-img {
     height: 10rem;
-    min-width: 100%;
   }
 }
 
