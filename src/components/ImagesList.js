@@ -14,11 +14,7 @@ const ImagesList = ({ pictures = [] }) => {
         const slug = slugify(title, { lower: true });
         return (
           <Link key={id} to={`/${slug}`} className="recipe">
-            <GatsbyImage
-              image={pathToImage}
-              className="recipe-img"
-              alt={title}
-            ></GatsbyImage>
+            <img className="recipe-img" src={image.file.url} alt={title} />
             <figcaption>
               <h5>{title}</h5>
             </figcaption>
