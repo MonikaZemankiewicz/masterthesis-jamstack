@@ -1,6 +1,6 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql } from "gatsby";
 
 const ImageTemplate = ({ data }) => {
   const { title, image } = data.contentfulImage;

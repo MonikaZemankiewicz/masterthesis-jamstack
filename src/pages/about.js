@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
-import aboutImage from "../assets/images/1.jpg";
 
 const About = () => {
   return (
@@ -27,7 +26,12 @@ const About = () => {
               contact
             </Link>
           </article>
-          <img alt="about-us-image" className="about-img" src={aboutImage} />
+          <StaticImage
+            src="../assets/images/1.jpg"
+            alt="about-us-image"
+            className="about-img"
+            placeholder="blurred"
+          />
         </section>
       </main>
     </Layout>

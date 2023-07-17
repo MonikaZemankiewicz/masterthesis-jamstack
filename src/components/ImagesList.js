@@ -3,8 +3,6 @@ import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 // import { Link } from "gatsby-plugin-modal-routing";
 import slugify from "slugify";
-import { ModalRoutingContext } from "gatsby-plugin-modal-routing";
-
 const ImagesList = ({ pictures = [] }) => {
   return (
     <div className="recipes-list">
@@ -14,7 +12,11 @@ const ImagesList = ({ pictures = [] }) => {
         const slug = slugify(title, { lower: true });
         return (
           <Link key={id} to={`/${slug}`} className="recipe">
-            <img className="recipe-img" src={image.file.url} alt={title} />
+            <GatsbyImage
+              image={pathToImage}
+              className="recipe-img"
+              alt={title}
+            ></GatsbyImage>
             <figcaption>
               <h5>{title}</h5>
             </figcaption>

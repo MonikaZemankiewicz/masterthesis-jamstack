@@ -9,9 +9,7 @@ const query = graphql`
         id
         title
         image {
-          file {
-            url
-          }
+          gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
         }
       }
     }
